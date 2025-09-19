@@ -1,0 +1,28 @@
+:root {
+    --primary-color: #1b1b1b;
+    --bg-color: #FDF8E3;
+    --light-grey-color: #8F8F8F;
+    --green-color: #01B7AB;
+    --purple-color: #5D5BFF;
+    --yellow-color: #FDB725;
+    --orange-color: #FD8A25;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    overflow-x: hidden;
+    color: var(--primary-color);
+    font-family: "DM Sans", sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
