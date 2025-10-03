@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,7 +9,11 @@
   <!-- FONT -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <!-- FONT SORA -->
   <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet" />
+  <!-- FONT MR.DAFOE  -->
+  <link href="https://fonts.googleapis.com/css2?family=Mr+Dafoe&display=swap" rel="stylesheet">
+
 
   <!-- BOOTSTRAP -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -20,13 +25,125 @@
 
   <!-- Favicon -->
   <link rel="shortcut icon" href="images/logo-katring.png" type="image/x-icon" />
+  <!-- FONTAWESOME -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 
 <body>
 
+  <!-- NAVBAR -->
+  <header>
+        <i class="bx bx-menu" id="menu-icon"></i>
+       
+        <nav class="navbar navbar-custom">
+        <ul>
+          <li><img src="images/logo-katring.svg" alt="logo" ></li>
+            <li><a href="#tentang-kami">Tentan Kami</a></li>
+            <li><a href="cv-builder.html">Menu</a></li>
+            <li><a href="webinar.html">Testimoni</a></li>
+            <li><a href="quiz.html">Kontak</a></li>
+        </ul>
+      </nav>
+    </header>
+
+  <!-- Hero Section -->
+    <section class="hero d-flex align-items-center text-white text-center">
+  <div class="container">
+    <h3 class="hero-subtitle mb-3">cita rasa</h3>
+    <h1 class="hero-title fw-bold mb-3">
+      <i class="fa-solid fa-motorcycle me-3"></i> Ring ring! <i class="fa-solid fa-motorcycle ms-3"></i> <br>
+      Makan sehatmu datang
+    </h1>
+    <p class="lead mb-4">
+      KatRing siap nganterin menu sehat, fresh, dan penuh energi langsung ke pintu rumahmu.
+    </p>
+    <div class="d-flex justify-content-center gap-3">
+          <a href="#fitur" class="btn btn-start btn-lg"> Custom Menu </a>
+          <a href="#tentang" class="btn btn-outline-light btn-lg">
+            Cek Menu
+          </a>
+        </div>
+
+  </div>
+</section>
+
+
+<!-- PROVIDE -->
+<section id="fitur" class="container-fluid py-5">
+  <h2 class="title text-center mb-5">
+    Fitur <span class="highlight">Sikerir</span>
+  </h2>
+
+  <div class="row justify-content-center gap-3 gap-md-0">
+
+    <!-- Left Cards -->
+    <div class="col-md-12 col-lg-3 d-flex flex-column flex-md-row flex-lg-column gap-3 gap-lg-0 justify-content-between order-2 order-lg-1">
+      <a href="quiz.html" class="card-fitur-link">
+        <div class="card-fitur my-md-3">
+          <div class="card-icon">
+            <i class="bx bx-compass"></i>
+          </div>
+          <h3>Cari Minatmu!</h3>
+          <p>Temukan passion yang Kamu suka</p>
+        </div>
+      </a>
+
+      <a href="cv-builder.html" class="card-fitur-link">
+        <div class="card-fitur my-md-3">
+          <div class="card-icon">
+            <i class='bx bx-book-content'></i>
+          </div>
+          <h3>Build CV</h3>
+          <p>Buat CV profesional dengan mudah</p>
+        </div>
+      </a>
+    </div>
+
+    <!-- Phone -->
+   <!-- Phone / Middle Card -->
+<div class="col-lg-6 col-md-12 d-flex justify-content-center align-items-center order-1 order-lg-2">
+  <div class="card-middle text-center">
+    <h2 class="card-title">Kenapa sih harus di KatRing?</h2>
+    <img src="images/img-provide.png" alt="Kenapa KatRing" class="card-image">
+  </div>
+</div>
+
+    <!-- Right Cards -->
+    <div class="col-md-12 col-lg-3 d-flex flex-column flex-md-row flex-lg-column gap-3 gap-lg-0 justify-content-between order-3 order-lg-3">
+      <a href="webinar.html" class="card-fitur-link">
+        <div class="card-fitur my-md-3">
+          <div class="card-icon">
+            <i class="bx bx-slideshow"></i>
+          </div>
+          <h3>Webinar</h3>
+          <p>Belajar skill baru dari mentor</p>
+        </div>
+      </a>
+
+      <a href="#karir" class="card-fitur-link">
+        <div class="card-fitur my-md-3">
+          <div class="card-icon">
+            <i class="bx bx-briefcase"></i>
+          </div>
+          <h3>Job Finder</h3>
+          <p>Cari dan lamar kerja cepat</p>
+        </div>
+      </a>
+    </div>
+
+  </div>
+</section>
+
+
+
+    
   <!-- JavaScript -->
   <script src="js/script.js"></script>
 
 </body>
 
 </html>
+
+  
+  
+
