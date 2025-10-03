@@ -117,8 +117,8 @@ header {
 }
 
 .navbar ul img {
-  width: 120px;  /* lebih gede */
-  height: auto;  /* biar proporsional */
+  width: 120px;
+  height: auto;
 }
 
 .navbar ul {
@@ -188,7 +188,7 @@ header {
 /* PROVIDE */
 #fitur {
   padding: 0 9em;
-  align-items: stretch; /* biar semua col tingginya sama */
+  align-items: stretch;
 }
 
 .card-fitur {
@@ -261,29 +261,25 @@ header {
   width: 100%;
   text-align: center;
   justify-content: space-between;
-  padding: 0; /* buang padding default */ 
+  padding: 0;
 
   background: url("../images/bg-provide.png") no-repeat center center/cover;
 }
-
-
 
 .card-middle .card-title {
   position: relative;
   z-index: 1;
   margin-top: 1em;
-  margin-bottom: 2em; 
+  line-height: 50px;
 }
 
 .card-middle .card-image {
-display: block;       
-  width: 80%;          
-  margin: 0;          
-  padding: 0;         
-  object-fit: cover;   
+  display: block;
+  width: 80%;
+  margin: 0;
+  padding: 0;
+  object-fit: cover;
 }
-
-
 
 /* Left & Right Cards */
 .left-cards,
@@ -430,5 +426,75 @@ display: block;
   .left-cards,
   .right-cards {
     width: 100%;
+  }
+}
+
+/* Third Section */
+#makan {
+  width: 100%;
+  height: auto;
+}
+
+.kalori {
+  font-size: 14px;
+}
+
+.card {
+  border-radius: 15px;
+}
+
+.card:hover {
+  border: 2px solid var(--green-color);
+}
+
+.marquee-container {
+  overflow: hidden;
+  position: relative;
+}
+
+.marquee {
+  display: flex;
+  width: max-content;
+  animation-duration: 25s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+.marqueeOne {
+  animation-name: marqueeScrollRight;
+}
+
+.marqueeTwo {
+  animation-name: marqueeScrollLeft;
+}
+
+.marquee-content {
+  display: flex;
+  gap: 1.5rem;
+  flex: 0 0 auto;
+  padding-right: 1.5rem;
+}
+
+.marquee:hover {
+  animation-play-state: paused;
+}
+
+@keyframes marqueeScrollLeft {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes marqueeScrollRight {
+  from {
+    transform: translateX(-50%);
+  }
+
+  to {
+    transform: translateX(0);
   }
 }
