@@ -499,6 +499,198 @@ header {
   }
 }
 
+/* SLIDER */
+.food-section {
+  position: relative;
+  padding: 80px 0;
+  width: 100em; /* aku pertahankan ini sesuai kode kamu */
+  overflow: hidden;
+}
+
+/* daun kiri-kanan (pertahankan sesuai milikmu) */
+.leaf-left {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 150px;
+  z-index: 1;
+}
+
+.leaf-right {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 150px;
+  z-index: 1;
+}
+
+.food-section h2 {
+  text-align: center;
+  font-weight: 700;
+  font-size: 2rem;
+  margin-bottom: 50px;
+  z-index: 2;
+  position: relative;
+}
+
+/* wrapper luar: visible supaya tombol bisa tampil di luar viewport */
+.food-carousel-wrapper {
+  position: relative;
+  overflow: visible; /* penting: tombol tidak kepotong */
+  width: 100%;
+  margin: 0 auto;
+}
+
+
+.food-carousel-viewport {
+  overflow: hidden; 
+}
+
+.food-carousel {
+  display: flex;
+  gap: 1rem; 
+  transition: transform 0.5s ease;
+  align-items: center;
+  z-index: 2;
+}
+
+
+.card-food {
+  border: none;
+  border-radius: 16px;
+  overflow: hidden;
+  position: relative;
+  width: 350px;
+  flex-shrink: 0;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+.card-food img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.card-food:hover img {
+  transform: scale(1.05);
+}
+
+
+.card-img-overlay,
+.card-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.75));
+  padding: 20px;
+  color: white;
+}
+
+.card-img-overlay h5,
+.card-overlay h5 {
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+.card-img-overlay span,
+.card-overlay span {
+  display: inline-block;
+  background-color: #fdbb11;
+  color: #000;
+  padding: 6px 16px;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 0.9rem;
+  margin-top: 8px;
+}
+
+
+.custom-prev,
+.custom-next {
+  width: 60px;
+  height: 60px;
+  background: white;
+  border-radius: 50%;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  top: 50%;
+  transform: translateY(-50%);
+  opacity: 1;
+  position: absolute;
+  z-index: 4;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.custom-prev:hover,
+.custom-next:hover {
+  background-color: #f5f5f5;
+}
+
+.custom-prev {
+  left: -30px;
+}
+
+.custom-next {
+  right: -30px;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  filter: invert(1);
+}
+
+.food-section .container {
+  position: relative;
+  z-index: 3;
+}
+
+.card-img-overlay {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-end;
+  padding: 20px;
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.6));
+}
+
+.food-title {
+  margin-bottom: 8px; 
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-align: left;
+}
+
+.plan-badge {
+  display: inline-block;
+  background-color: var(--yellow-color);
+  color: var(--primary-color);
+  padding: 6px 16px;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 0.9rem;
+  margin-top: 8px;
+  align-self: flex-start; 
+}
+
+
+
+@media (max-width: 767px) {
+  .leaf-left,
+  .leaf-right {
+    display: none;
+  }
+  .custom-prev, .custom-next {
+    display: none; 
+  }
+}
+
+
+
 /* TESTIMONI */
 #testimoni {
   background-color: var(--green-color);

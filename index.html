@@ -234,6 +234,74 @@
     </div>
   </section>
 
+  <section class="food-section text-center position-relative">
+  <!-- Daun Kiri -->
+  <img src="images/leaf-left.png" class="leaf-left" alt="Leaf Left">
+  <!-- Daun Kanan -->
+  <img src="images/leaf-right.png" class="leaf-right" alt="Leaf Right">
+
+  <div class="container">
+    <h2 class="fw-bold mb-5">Yuk pilih-pilih makanan sehatmu disini!</h2>
+
+    <div class="food-carousel-wrapper position-relative">
+      <!-- viewport: ini yang memotong card (overflow hidden) -->
+      <div class="food-carousel-viewport">
+        <div class="food-carousel d-flex">
+          <!-- CARD 1 -->
+          <div class="card-food text-start text-white">
+            <img src="images/appetizer.png" class="card-img" alt="Dessert">
+            <div class="card-img-overlay d-flex flex-column justify-content-end p-3"
+                 style="background: linear-gradient(transparent, rgba(0,0,0,0.6));">
+              <h3 class="food-title">Dessert</h3>
+              <span class="plan-badge">Our most popular plan</span>
+            </div>
+          </div>
+          <!-- CARD 2 -->
+          <div class="card-food text-start text-white">
+            <img src="images/dessert.png" class="card-img" alt="Meat">
+            <div class="card-img-overlay d-flex flex-column justify-content-end p-3"
+                 style="background: linear-gradient(transparent, rgba(0,0,0,0.6));">
+              <h3 class="food-title">Meat</h3>
+              <span class="plan-badge">Our most popular plan</span>
+            </div>
+          </div>
+          <!-- CARD 3 -->
+          <div class="card-food text-start text-white">
+            <img src="images/meat.png" class="card-img" alt="Veggie">
+            <div class="card-img-overlay d-flex flex-column justify-content-end p-3"
+                 style="background: linear-gradient(transparent, rgba(0,0,0,0.6));">
+              <h3 class="food-title">Veggie</h3>
+              <span class="plan-badge">Our most popular plan</span>
+            </div>
+          </div>
+          <!-- CARD 4 -->
+          <div class="card-food text-start text-white">
+            <img src="images/veggie.png" class="card-img" alt="Seafood">
+            <div class="card-img-overlay d-flex flex-column justify-content-end p-3"
+                 style="background: linear-gradient(transparent, rgba(0,0,0,0.6));">
+              <h3 class="food-title">Seafood</h3>
+              <span class="plan-badge">Our most popular plan</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tombol Prev & Npext (di luar viewport supaya nggak kepotong) -->
+      <button class="carousel-control-prev custom-prev" type="button" aria-label="Previous">
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+      <button class="carousel-control-next custom-next" type="button" aria-label="Next">
+        <span class="carousel-control-next-icon"></span>
+      </button>
+    </div>
+  </div>
+</section>
+
+
+
+  
+
+
   <!-- TESTIMONI -->
   <section id="testimoni" class="py-5 container rounded-4 text-white justify-content-center"
     style="height: 80vh; overflow: hidden">
