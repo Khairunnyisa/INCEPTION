@@ -5,19 +5,7 @@ document.querySelectorAll(".marquee").forEach(marquee => {
   marquee.appendChild(clone);
 });
 
-// TESTIMONI 
-document.querySelectorAll(".testi-scroll").forEach(scroll => {
-  const track = scroll.querySelector(".testi-track");
-  if (track) {
-    const clone = track.cloneNode(true);
-    scroll.appendChild(clone);
-  }
-});
-
-
 // SLIDER FOOD
-
-
 document.addEventListener('DOMContentLoaded', function() {
   const carousel = document.querySelector('.food-carousel');
   const nextBtn = document.querySelector('.custom-next');
@@ -42,3 +30,11 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 });
 
+// TESTIMONI 
+document.querySelectorAll(".testi-scroll").forEach(scroll => {
+  const track = scroll.querySelector(".testi-track");
+  if (track) {
+    const clone = track.cloneNode(true);
+    scroll.appendChild(clone);
+  }
+});
