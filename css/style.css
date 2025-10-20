@@ -30,8 +30,8 @@ body {
 
 /* NAVBAR */
 .logo img {
-  width: 30px;
-  height: 30px;
+  width: 25px;
+  height: 25px;
   cursor: default;
   display: none;
 }
@@ -345,90 +345,6 @@ header {
   opacity: 1;
 }
 
-/* RESPONSIVE */
-@media (max-width: 1024px) {
-  #fitur {
-    padding: 0 2em;
-  }
-
-  .fitur-container {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .left-cards,
-  .right-cards {
-    flex-direction: row;
-    justify-content: space-between;
-    flex-wrap: wrap;
-  }
-}
-
-@media (max-width: 768px) {
-  #fitur {
-    padding: 2em 3em;
-  }
-
-  .phone-wrapper {
-    max-width: 500px;
-    padding-top: 10%;
-  }
-
-  .phone-content {
-    width: 60%;
-  }
-
-  .phone-content .phone-video {
-    width: 90%;
-  }
-}
-
-@media (max-width: 480px) {
-  #fitur {
-    padding: 1em;
-  }
-
-  .title {
-    font-size: 1.5em;
-  }
-
-  .fitur-container {
-    gap: 1.5em;
-  }
-
-  .phone-wrapper {
-    width: 100%;
-    padding-bottom: 6%;
-  }
-
-  .phone-content {
-    width: 60%;
-  }
-
-  .card-fitur {
-    width: 100%;
-    height: auto;
-  }
-
-  .card-fitur h3 {
-    font-size: 22px;
-  }
-
-  .card-fitur p {
-    font-size: 16px;
-  }
-
-  .card-fitur .arrow {
-    top: 20px;
-    right: 20px;
-  }
-
-  .left-cards,
-  .right-cards {
-    width: 100%;
-  }
-}
-
 /* Third Section */
 #makan {
   width: 100%;
@@ -509,7 +425,7 @@ header {
 .food-section {
   position: relative;
   padding: 80px 0;
-  width: 100em;
+  width: 100%;
   overflow: hidden;
 }
 
@@ -544,7 +460,6 @@ header {
   width: 100%;
   margin: 0 auto;
 }
-
 
 .food-carousel-viewport {
   overflow: hidden;
@@ -602,7 +517,7 @@ header {
 .card-overlay span {
   display: inline-block;
   background-color: #fdbb11;
-  color: #000;
+  color: var(--primary-color);
   padding: 6px 16px;
   border-radius: 8px;
   font-weight: 600;
@@ -679,19 +594,6 @@ header {
   align-self: flex-start;
 }
 
-@media (max-width: 767px) {
-
-  .leaf-left,
-  .leaf-right {
-    display: none;
-  }
-
-  .custom-prev,
-  .custom-next {
-    display: none;
-  }
-}
-
 #aplikasi {
   width: 100vw;
   height: 100vh;
@@ -717,14 +619,6 @@ header {
 .aplikasi-text h1 {
   font-size: 62px;
   line-height: 1.3;
-}
-
-@media (max-width: 992px) {
-  .aplikasi-text {
-    max-width: 100%;
-    text-align: center;
-    margin-bottom: 2rem;
-  }
 }
 
 /* TESTIMONI */
@@ -797,13 +691,12 @@ header {
 
 /* KONTAK SECTION */
 .kontak-section {
-  background-color: var(--yellow-color); 
+  background-color: var(--yellow-color);
   position: relative;
   padding: 50px 8%;
   width: 100%;
 }
 
-/* Gambar ayam */
 .kontak-section .ayam-img {
   position: absolute;
   bottom: 0;
@@ -812,7 +705,6 @@ header {
   z-index: 5;
 }
 
-/* Container isi teks + tombol */
 .kontak-section .container {
   position: relative;
   z-index: 2;
@@ -823,7 +715,6 @@ header {
   font-size: 35px;
 }
 
-/* Input + tombol Hubungi Kami */
 .hubungi {
   background: #fff;
   border-radius: 50px;
@@ -844,7 +735,7 @@ header {
 }
 
 .btn-arrow {
-  background-color: #146B3A; /* hijau seperti di tema */
+  background-color: var(--green-color);
   border: none;
   color: white;
   width: 84px;
@@ -863,43 +754,18 @@ header {
   transition: transform 0.3s ease;
 }
 
-/* Animasi saat hover */
 .btn-arrow:hover {
   background-color: #0f532e;
 }
 
 .btn-arrow:hover i {
-  transform: translateX(6px); /* geser halus ke kanan */
+  transform: translateX(6px);
 }
 
 .underline {
   text-decoration-line: underline;
   text-decoration-color: var(--green-color);
 }
-
-
-/* Responsiveness */
-@media (max-width: 768px) {
-  .kontak-section .ayam-img {
-    width: 160px;
-    transform: translateY(20%);
-  }
-
-  .hubungi {
-    width: 100%;
-    margin-top: 20px;
-  }
-
-  .kontak-section .container {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .ayam-img {
-    display: none;
-  }
-}
-
 
 /* FOOTER */
 .footer {
@@ -1031,4 +897,17 @@ header {
 
 .footer-bottom .links a:hover {
   color: var(--yellow-color);
+}
+
+.footer .subscribe input {
+  flex: 1;
+  padding: 10px 12px;
+  border: none;
+  border-radius: 6px 0 0 6px;
+  font-size: 16px;
+  min-width: 0;
+}
+
+.footer .subscribe button:hover {
+  transform: scale(1.05);
 }
