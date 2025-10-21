@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KatRing</title>
+  <!-- FONT -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <!-- FONT SORA -->
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet" />
+  <!-- FONT MR.DAFOE  -->
+  <link href="https://fonts.googleapis.com/css2?family=Mr+Dafoe&display=swap" rel="stylesheet">
+
+
+  <!-- BOOTSTRAP -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous" />
+  <link rel="stylesheet" href="css/menu.css">
+  <link rel="stylesheet" href="css/responsive.css">
+
+  <!-- Boxicons -->
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="images/logo-katring.png" type="image/x-icon" />
+  <!-- FONTAWESOME -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <!-- NAVBAR -->
+  <header>
+    <i class="bx bx-menu" id="menu-icon"></i>
+    <nav class="navbar navbar-custom">
+      <ul>
+        <li><a href="index.html"><img src="images/logo-katring.svg" alt="logo"></a></li>
+        <li><a href="#fitur">Tentang Kami</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="#testimoni">Testimoni</a></li>
+        <li><a href="#kontak">Kontak</a></li>
+      </ul>
+    </nav>
+  </header>
+
+<!-- HEADER -->
+  <section id="hero" class="hero-section text-white text-center d-flex align-items-center">
+  <div class="container">
+
+    <h1 class="fw-bold mb-4">Memilih menu hidangan<br>untuk para tamu?</h1>
+
+    <div class="form-wrapper mx-auto">
+      <div class="row justify-content-center mb-2">
+        <div class="col-md-4 col-12 mb-2">
+          <div class="label-icon">
+            <i class='bx bx-time-five'></i> Waktu Pengiriman
+          </div>
+        </div>
+        <div class="col-md-3 col-12 mb-2">
+          <div class="label-icon">
+            <i class='bx bx-user'></i> Jumlah Pax
+          </div>
+        </div>
+      </div>
+
+      <form class="row justify-content-center g-3">
+        <div class="col-md-2 col-12">
+          <input type="date" class="form-control" id="tanggal">
+        </div>
+        <div class="col-md-2 col-12">
+          <input type="time" class="form-control" id="waktu">
+        </div>
+        <div class="col-md-2 col-12">
+          <input type="number" class="form-control" id="jumlahPax" placeholder="100">
+        </div>
+      </form>
+
+      <button type="submit" class="btn btn-warning fw-semibold px-5 py-2 mt-4">
+        Pesan Sekarang
+      </button>
+    </div>
+
+  </div>
+</section>
+
+<!-- MENU SECTION -->
+<section id="menu" class="menu-section py-5 ">
+  <div class="container px-xxl-7 px-lg-6 px-4 py-5">
+
+ <!-- Filter Bar -->
+<div class="filter-bar d-flex flex-wrap mb-5 px-5 gap-4">
+  <div class="filter-group mb-3">
+    <label for="sort" class="filter-label">Urutkan</label>
+    <div class="select-wrapper">
+      <select id="sort" class="filter-select shadow-sm p-3">
+        <option selected>Harga Tertinggi - Rendah</option>
+        <option>Harga Terendah - Tinggi</option>
+        <option>Abjad A-Z</option>
+        <option>Abjad Z-A</option>
+      </select>
+      <i class='bx bx-chevron-down'></i>
+    </div>
+  </div>
+
+  <div class="filter-group mb-3">
+    <label for="filter" class="filter-label">Filter</label>
+    <div class="select-wrapper">
+      <select id="filter" class="filter-select shadow-sm p-3">
+        <option selected>Ikan</option>
+        <option>Ayam</option>
+        <option>Daging</option>
+        <option>Vegetarian</option>
+      </select>
+      <i class='bx bx-chevron-down'></i>
+    </div>
+  </div>
+</div>
+
+
+
+    <!-- Menu Cards -->
+    <div class="row justify-content-center gy-5 gx-3">
+      <!-- Card Item -->
+      <div class="col-12 col-md-6 col-lg-4 d-flex justify-content-center">
+        <div class="menu-card p-4 shadow-sm bg-white rounded-4 w-100" style="max-width: 320px;">
+          <img src="images/menu-1.png" alt="Nusantara Pedas" class="menu-img mb-4">
+          <h4 class="fw-semibold">Nusantara Pedas</h4>
+          <p class="text-muted mb-2 pb-3">Nasi Putih, Ayam Rica-Rica, Perkedel, Sayur Lodeh, Risol, Sambel Matah.</p>
+          <div class="d-flex justify-content-between align-items-center">
+            <h3 class="fw-bold text-success">Rp38.000</h3>
+            <button class="btn btn-success rounded-circle p-2"><i class='bx bx-plus'></i></button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card Item -->
+      <div class="col-12 col-md-6 col-lg-4 d-flex justify-content-center">
+        <div class="menu-card p-4 shadow-sm bg-white rounded-4 w-100" style="max-width: 320px;">
+          <img src="images/menu-2.png" alt="Liwet Sunda" class="menu-img mb-4">
+          <h4 class="fw-semibold">Liwet Sunda</h4>
+          <p class="text-muted mb-2 pb-3">Nasi Liwet, Ayam Bakar, Sate Maranggi, Tumis Kangkung, Lemper Ayam.</p>
+          <div class="d-flex justify-content-between align-items-center">
+            <h3 class="fw-bold text-success">Rp42.000</h3>
+            <button class="btn btn-success rounded-circle p-2"><i class='bx bx-plus'></i></button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card Item -->
+      <div class="col-12 col-md-6 col-lg-4 d-flex justify-content-center">
+        <div class="menu-card p-4 shadow-sm bg-white rounded-4 w-100" style="max-width: 320px;">
+          <img src="images/menu-3.png" alt="Padang Rasa" class="menu-img mb-4">
+          <h4 class="fw-semibold">Padang Rasa</h4>
+          <p class="text-muted mb-2 pb-3">Nasi Kuning, Rendang Padang, Telur Balado, Urap, Bakwan Jagung, Sambel.</p>
+          <div class="d-flex justify-content-between align-items-center">
+            <h3 class="fw-bold text-success">Rp40.000</h3>
+            <button class="btn btn-success rounded-circle p-2"><i class='bx bx-plus'></i></button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card Item -->
+      <div class="col-12 col-md-6 col-lg-4 d-flex justify-content-center">
+        <div class="menu-card p-4 shadow-sm bg-white rounded-4 w-100" style="max-width: 320px;">
+          <img src="images/menu-4.png" alt="Laut Nusantara" class="menu-img mb-4">
+          <h4 class="fw-semibold">Laut Nusantara</h4>
+          <p class="text-muted mb-2 pb-3">Nasi Uduk, Udang Balado, Ikan Bakar, Capcay Goreng, Pastel Goreng.</p>
+          <div class="d-flex justify-content-between align-items-center">
+            <h3 class="fw-bold text-success">Rp45.000</h3>
+            <button class="btn btn-success rounded-circle p-2"><i class='bx bx-plus'></i></button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-md-6 col-lg-4 d-flex justify-content-center">
+        <div class="menu-card p-4 shadow-sm bg-white rounded-4 w-100" style="max-width: 320px;">
+          <img src="images/menu-5.png" alt="Laut Nusantara" class="menu-img mb-4">
+          <h4 class="fw-semibold">Jawa Manis Gurih</h4>
+          <p class="text-muted mb-2 pb-3">Nasi Uduk, Udang Balado, Ikan Bakar, Capcay Goreng, Pastel Goreng.</p>
+          <div class="d-flex justify-content-between align-items-center">
+            <h3 class="fw-bold text-success">Rp46.000</h3>
+            <button class="btn btn-success rounded-circle p-2"><i class='bx bx-plus'></i></button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-md-6 col-lg-4 d-flex justify-content-center">
+        <div class="menu-card p-4 shadow-sm bg-white rounded-4 w-100" style="max-width: 320px;">
+          <img src="images/menu-6.png" alt="Laut Nusantara" class="menu-img mb-4">
+          <h4 class="fw-semibold">Spesial Bali-Jawa</h4>
+          <p class="text-muted mb-2 pb-3">Nasi Uduk, Udang Balado, Ikan Bakar, Capcay Goreng, Pastel Goreng.</p>
+          <div class="d-flex justify-content-between align-items-center">
+            <h3 class="fw-bold text-success">Rp30.000</h3>
+            <button class="btn btn-success rounded-circle p-2"><i class='bx bx-plus'></i></button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-md-6 col-lg-4 d-flex justify-content-center">
+        <div class="menu-card p-4 shadow-sm bg-white rounded-4 w-100" style="max-width: 320px;">
+          <img src="images/menu-7.png" alt="Laut Nusantara" class="menu-img mb-4">
+          <h4 class="fw-semibold">Komplit Favorit</h4>
+          <p class="text-muted mb-2 pb-3">Nasi Uduk, Udang Balado, Ikan Bakar, Capcay Goreng, Pastel Goreng.</p>
+          <div class="d-flex justify-content-between align-items-center">
+            <h3 class="fw-bold text-success">Rp33.000</h3>
+            <button class="btn btn-success rounded-circle p-2"><i class='bx bx-plus'></i></button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-md-6 col-lg-4 d-flex justify-content-center">
+        <div class="menu-card p-4 shadow-sm bg-white rounded-4 w-100" style="max-width: 320px;">
+          <img src="images/menu-8.png" alt="Laut Nusantara" class="menu-img mb-4">
+          <h4 class="fw-semibold">Laut Pedas Mantap</h4>
+          <p class="text-muted mb-2 pb-3">Nasi Uduk, Udang Balado, Ikan Bakar, Capcay Goreng, Pastel Goreng.</p>
+          <div class="d-flex justify-content-between align-items-center">
+            <h3 class="fw-bold text-success">Rp53.000</h3>
+            <button class="btn btn-success rounded-circle p-2"><i class='bx bx-plus'></i></button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-md-6 col-lg-4 d-flex justify-content-center">
+        <div class="menu-card p-4 shadow-sm bg-white rounded-4 w-100" style="max-width: 320px;">
+          <img src="images/menu-9.png" alt="Laut Nusantara" class="menu-img mb-4">
+          <h4 class="fw-semibold">Spesial Minang</h4>
+          <p class="text-muted mb-2 pb-3">Nasi Uduk, Udang Balado, Ikan Bakar, Capcay Goreng, Pastel Goreng.</p>
+          <div class="d-flex justify-content-between align-items-center">
+            <h3 class="fw-bold text-success">Rp36.000</h3>
+            <button class="btn btn-success rounded-circle p-2"><i class='bx bx-plus'></i></button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- KONTAK SECTION -->
+  <section id="kontak" class="kontak-section position-relative ">
+    <img src="images/ayam.png" alt="Ayam Panggang" class="ayam-img">
+
+    <div class="container d-flex justify-content-between align-items-center flex-wrap">
+      <h2 class="fw-bold mb-3 mb-md-0 text-dark">
+        Ada pertanyaan atau mau <br> pesan <span class="underline">KatRing?</span>
+      </h2>
+
+      <div class="hubungi d-flex align-items-center">
+        <input type="text" placeholder="Hubungi Kami" readonly>
+        <button class="btn-arrow">
+          <i class='bx bx-right-arrow-alt'></i>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-container">
+      <!-- Social Media -->
+      <div class="footer-col">
+        <img src="images/logo-footer.png" alt="KatRing Logo" class="footer-logo">
+        <p>
+          KatRing siap nganterin menu sehat, fresh, dan penuh energi langsung ke pintu rumahmu.
+        </p>
+        <div class="social-icons">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="far fa-envelope"></i></a>
+          <a href="#"><i class="fab fa-whatsapp"></i></a>
+        </div>
+      </div>
+
+      <!-- Navigasi -->
+      <div class="footer-col">
+        <h4>Navigasi Utama</h4>
+        <ul>
+          <li><a href="#fitur">Tentang Kami</a></li>
+          <li><a href="#">Menu</a></li>
+          <li><a href="#testimoni">Testimoni</a></li>
+          <li><a href="#kontak">Kontak</a></li>
+        </ul>
+      </div>
+
+      <!-- Kontak -->
+      <div class="footer-col">
+        <h4>Kontak Kami</h4>
+        <p>+62 812-345-678</p>
+        <p>katring@gmail.com</p>
+        <p>Jl. Dayeuh kampung lio pasar malam</p>
+
+        <div class="subscribe">
+          <input type="email" placeholder="Masukkan E-mail Anda">
+          <button>Subscribe</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; Copyright 2025 - KatRing</p>
+      <div class="links">
+        <a href="#">Terms of Service</a>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Cookies</a>
+      </div>
+    </div>
+  </footer>
+
+ 
+  <!-- JavaScript -->
+  <script src="js/script.js"></script>
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+  <!-- JavaScript -->
+  <script src="js/script.js"></script>
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    
+</body>
+</html>

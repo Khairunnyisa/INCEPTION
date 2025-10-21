@@ -20,6 +20,7 @@ document.querySelectorAll(".marquee").forEach(marquee => {
 });
 
 // SLIDER FOOD
+
 document.addEventListener('DOMContentLoaded', function() {
   const carousel = document.querySelector('.food-carousel');
   const nextBtn = document.querySelector('.custom-next');
