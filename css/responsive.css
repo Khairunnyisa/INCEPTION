@@ -463,13 +463,27 @@
     display: none;
   }
 
+  #testimoni .col-md-7,
   #testimoni .col-md-7 .row {
-    display: block;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+
+  #testimoni .col-md-7 .row {
+    display: flex;
+    justify-content: center;
   }
 
   .testi-card {
-    max-width: 90%;
+    max-width: 380px;
+    width: 100%;
     margin: 0 auto 1.5rem;
+  }
+
+  #testimoni .col-md-4 {
+    text-align: center;
   }
 
   #testimoni .col-md-4 h1 {
