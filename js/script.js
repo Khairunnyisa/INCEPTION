@@ -27,7 +27,7 @@ document.addEventListener('DOMContentLoaded', function() {
   const prevBtn = document.querySelector('.custom-prev');
 
   const cardWidth = document.querySelector('.card-food').offsetWidth + 16; // width + gap
-  const visibleCards = 3; // jumlah card penuh yang mau kelihatan
+  const visibleCards = 3; 
   let currentIndex = 0;
 
   nextBtn.addEventListener('click', () => {

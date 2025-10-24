@@ -120,6 +120,22 @@ header {
 
 .btn-start {
   background-color: var(--light-green-color);
+  transition: all 0.3s ease;
+}
+
+.btn-start:hover {
+  background-color: #7ccf0f; 
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(147, 220, 23, 0.3);
+}
+
+.btn-outline-light {
+  transition: all 0.3s ease;
+}
+
+.btn-outline-light:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(147, 220, 23, 0.3);
 }
 
 /* PROVIDE */
