@@ -10,28 +10,6 @@
   --focus-ring: 3px solid rgba(47, 125, 50, 0.15);
 }
 
-* {
-  box-sizing: border-box
-}
-
-html,
-body {
-  height: 100%
-}
-
-body {
-  margin: 0;
-  font-family: "Sora", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
-  background: url("../images/logo-bg.svg") repeat;
-  color: var(--text);
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  min-height: 100vh;
-}
-
 .visually-hidden {
   position: absolute !important;
   height: 1px;
@@ -46,9 +24,15 @@ body {
 
 .main-container {
   width: 100%;
-  max-width: 1280px;
   padding: 100px 20px 40px;
   box-sizing: border-box;
+}
+
+.custome {
+  background: url("../images/custome-bg.png") no-repeat center center/cover;
+  height: 100vh;
+  width: 100%;
+  position: relative;
 }
 
 .menu-section {
