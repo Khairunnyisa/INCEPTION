@@ -242,6 +242,7 @@
 }
 
 @media (max-width: 767px) {
+
   .leaf-left,
   .leaf-right {
     display: none;
@@ -331,6 +332,7 @@
 
 /* MENU LANDING */
 @media (max-width: 768px) {
+
   .custom-prev,
   .custom-next {
     display: flex;
@@ -542,7 +544,7 @@
     font-size: 1rem;
     padding: 0.8rem 1.8rem;
   }
-  
+
 }
 
 @media (max-width: 768px) {
@@ -607,7 +609,7 @@
 @media (max-width: 992px) {
   .hero-section {
     width: 100%;
-    background-size: cover; 
+    background-size: cover;
     background-position: center center;
     min-height: 600px;
   }
@@ -652,5 +654,125 @@
 
   .form-control {
     font-size: 0.85rem;
+  }
+}
+
+/* CUSTOM-MENU.HTML */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .menu-section {
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    padding: 20px;
+  }
+
+  .menu-left {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    position: relative;
+  }
+
+  #menu-left-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: contain;
+  }
+
+  .menu-items {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+
+  .menu-tabs::-webkit-scrollbar {
+    display: none;
+  }
+
+  .menu-card {
+    width: 100%;
+    max-width: 700px;
+    margin: 0 auto;
+    height: auto;
+  }
+
+  .menu-tabs {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+    padding: 8px 0;
+  }
+
+  .menu-tabs .tab {
+    flex: 1 1 auto;
+    min-width: 100px;
+    text-align: center;
+  }
+
+  #selected-items img {
+  width: 80px;
+  height: 80px;
+}
+
+}
+
+@media (max-width: 767px) {
+  .menu-section {
+    flex-direction: column;
+    align-items: center;
+    padding: 16px;
+    gap: 16px;
+  }
+
+  .menu-left {
+    width: 100%;
+    max-width: 320px;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+  }
+
+  #menu-left-image {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+  }
+
+  .menu-card {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    height: auto;
+  }
+
+  .menu-items {
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+
+  .menu-title {
+    font-size: 1.1rem;
+    margin: 15px 0 12px;
+  }
+
+  .menu-tabs {
+    display: flex;
+    overflow-x: auto;
+    white-space: nowrap;
+    justify-content: flex-start;
+    gap: 6px;
+    padding: 6px 0;
+  }
+
+  .menu-tabs::-webkit-scrollbar {
+    display: none;
+  }
+
+  .menu-tabs .tab {
+    flex: 0 0 auto;
+    font-size: 0.85rem;
+    padding: 6px 12px;
+    border-radius: 8px;
   }
 }
