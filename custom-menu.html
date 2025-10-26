@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KatRing</title>
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap"
+      rel="stylesheet"/>
+
+    <!-- ===== BOOTSTRAP ===== -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- ===== ICONS ===== -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+
+    <!-- ===== CUSTOM CSS ===== -->
+    <link rel="stylesheet" href="css/custom-menu.css" />
+
+    <!-- ===== FAVICON ===== -->
+    <link
+      rel="shortcut icon"
+      href="images/logo-katring.png"
+      type="image/x-icon"
+    />
+  </head>
+
+  <body>
+    <!-- ===== NAVBAR ===== -->
+    <header class="header-custom">
+      <nav class="navbar">
+        <ul>
+          <li><img src="images/logo-katring.svg" alt="logo" /></li>
+          <li><a href="#tentang-kami">Tentang Kami</a></li>
+          <li><a href="#"><strong>Menu</strong></a></li>
+          <li><a href="#">Testimoni</a></li>
+          <li><a href="#">Kontak</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- ===== MAIN LAYOUT ===== -->
+    <main class="main-container">
+      <section class="menu-section">
+        <!-- === LEFT CONTAINER === -->
+        <div class="menu-left">
+          <img
+            src="images/menu/menu-click1.png"
+            alt="Menu Preview"
+            id="menu-left-image"
+          />
+          <p class="menu-left-text">
+            Bingung kustom menu?
+            <a href="menu.html" class="menu-left-link">Cek menu kami!</a>
+          </p>
+        </div>
+
+        <!-- === RIGHT CONTAINER === -->
+        <div class="menu-card">
+             <!-- Tabs -->
+          <div class="menu-tabs">
+            <button class="tab active" data-category="nasi">Nasi</button>
+            <button class="tab" data-category="lauk">Lauk</button>
+            <button class="tab" data-category="sayur">Sayur</button>
+            <button class="tab" data-category="camilan">Camilan</button>
+            <button class="tab" data-category="sambal">Sambal</button>
+          </div>
+          
+          <!-- Content -->
+          <div class="menu-content">
+            <h3 class="menu-title">Pilih Nasi →</h3>
+            <div id="menu-items" class="menu-items">
+              <!-- Default Nasi Items -->
+              <div class="food-card">
+                <img src="images/menu/nasi-putih.png" alt="Nasi Putih" />
+                <p><strong>Nasi Putih</strong><br />$5.3</p>
+              </div>
+              <div class="food-card">
+                <img src="images/menu/nasi-kuning.png" alt="Nasi Kuning" />
+                <p><strong>Nasi Kuning</strong><br />$5.3</p>
+              </div>
+              <div class="food-card">
+                <img src="images/menu/nasi-uduk.png" alt="Nasi Uduk" />
+                <p><strong>Nasi Uduk</strong><br />$5.3</p>
+              </div>
+              <div class="food-card">
+                <img src="images/menu/nasi-liwet.png" alt="Nasi Liwet" />
+                <p><strong>Nasi Liwet</strong><br />$5.3</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+    <!-- ===== JS ===== -->
+    <script src="js/custom-menu.js"></script>
+  </body>
+</html>

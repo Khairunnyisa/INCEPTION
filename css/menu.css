@@ -7,7 +7,6 @@
 
 header {
   top: 20px;
-  width: auto;
   max-width: 1200px;
   display: flex;
   justify-content: center;
@@ -38,14 +37,12 @@ header {
 }
 
 .navbar ul li {
-  width: auto;
   display: flex;
   align-items: center;
 }
 
 .navbar ul li a,
 .navbar ul li a:visited {
-  width: auto;
   text-decoration: none;
   font-size: 16px;
   color: black;
@@ -118,7 +115,6 @@ h1 {
 }
 
 .btn-warning:hover {
-  background-color: var(--yellow-color);
   transform: translateY(-2px);
 }
 
@@ -177,7 +173,6 @@ h1 {
 /* FILTER BAR */
 .filter-bar {
   padding-top: 1rem;
-  padding-bottom: 1rem;
 }
 
 .filter-group {
