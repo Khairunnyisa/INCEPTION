@@ -67,16 +67,35 @@ let selectedData = {
 };
 
 // === POSISI ITEM DI PIRING ===
-const positions = {
-  nasi: { top: 410, left: 355 },
-  lauk: [
-    { top: 290, left: 300 },
-    { top: 345, left: 230 }
-  ],
-  sayur: { top: 320, left: 450 },
-  camilan: { top: 480, left: 450 },
-  sambal: { top: 495, left: 270 }
-};
+function getPositions() {
+  const isDesktop = window.innerWidth >= 1200;
+
+  if (isDesktop) {
+    // Desktop
+    return {
+      nasi: { x: 0.53, y: 0.45 },
+      lauk: [
+        { x: 0.38, y: 0.24 },
+        { x: 0.35, y: 0.34 }
+      ],
+      sayur: { x: 0.68, y: 0.32 },
+      camilan: { x: 0.68, y: 0.62 },
+      sambal: { x: 0.38, y: 0.63 }
+    };
+  } else {
+    // HP dan Tablet
+    return {
+      nasi: { x: 0.53, y: 0.45 },
+      lauk: [
+        { x: 0.38, y: 0.24 },
+        { x: 0.35, y: 0.34 }
+      ],
+      sayur: { x: 0.68, y: 0.32 },
+      camilan: { x: 0.68, y: 0.62 },
+      sambal: { x: 0.38, y: 0.61 }
+    };
+  }
+}
 
 // === RENDER LAUK OPTIONS ===
 function renderLaukOptions() {
@@ -166,23 +185,25 @@ function updateLayout(category) {
 // === UPDATE PLATE ===
 function updatePlate() {
   selectedItemsContainer.innerHTML = "";
+  const positions = getPositions();
+  const plate = document.getElementById("menu-left-image");
 
   Object.entries(selectedData).forEach(([cat, val]) => {
     if (Array.isArray(val)) {
       val.forEach((item, i) => {
         const img = document.createElement("img");
         img.src = item.img;
-        img.style.position = "absolute";
-        img.style.top = `${positions[cat][i].top}px`;
-        img.style.left = `${positions[cat][i].left}px`;
+        const pos = positions[cat][i];
+        img.style.left = `${pos.x * 100}%`;
+        img.style.top = `${pos.y * 100}%`;
         selectedItemsContainer.appendChild(img);
       });
     } else if (val) {
       const img = document.createElement("img");
       img.src = val.img;
-      img.style.position = "absolute";
-      img.style.top = `${positions[cat].top}px`;
-      img.style.left = `${positions[cat].left}px`;
+      const pos = positions[cat];
+      img.style.left = `${pos.x * 100}%`;
+      img.style.top = `${pos.y * 100}%`;
       selectedItemsContainer.appendChild(img);
     }
   });
@@ -211,3 +232,11 @@ function goToNextTab(currentCategory) {
   if (!next) return;
   document.querySelector(`.tab[data-category="${next}"]`)?.click();
 }
+
+// === Rezise ===
+document.addEventListener("DOMContentLoaded", () => {
+  updateLayout("nasi");
+  updatePlate();
+});
+
+window.addEventListener("resize", updatePlate);
