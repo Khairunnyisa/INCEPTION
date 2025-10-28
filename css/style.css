@@ -262,7 +262,7 @@ header {
 }
 
 .card-icon::after {
-  content: "\ebe6";
+  content: "\ed8e";
   font-family: "boxicons";
   font-size: 28px;
   position: absolute;

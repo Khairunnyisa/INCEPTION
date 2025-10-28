@@ -21,13 +21,13 @@ document.querySelectorAll(".marquee").forEach(marquee => {
 
 // SLIDER FOOD
 
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
   const carousel = document.querySelector('.food-carousel');
   const nextBtn = document.querySelector('.custom-next');
   const prevBtn = document.querySelector('.custom-prev');
 
   const cardWidth = document.querySelector('.card-food').offsetWidth + 16; // width + gap
-  const visibleCards = 3; 
+  const visibleCards = 3;
   let currentIndex = 0;
 
   nextBtn.addEventListener('click', () => {
@@ -66,14 +66,14 @@ sortSelect.addEventListener("change", () => {
 
   if (value === "Harga Tertinggi - Rendah") {
     sortedCards.sort((a, b) => {
-      const priceA = parseInt(a.querySelector("h3").textContent.replace("Rp","").replace(".",""));
-      const priceB = parseInt(b.querySelector("h3").textContent.replace("Rp","").replace(".",""));
+      const priceA = parseInt(a.querySelector("h3").textContent.replace("Rp", "").replace(".", ""));
+      const priceB = parseInt(b.querySelector("h3").textContent.replace("Rp", "").replace(".", ""));
       return priceB - priceA;
     });
   } else if (value === "Harga Terendah - Tinggi") {
     sortedCards.sort((a, b) => {
-      const priceA = parseInt(a.querySelector("h3").textContent.replace("Rp","").replace(".",""));
-      const priceB = parseInt(b.querySelector("h3").textContent.replace("Rp","").replace(".",""));
+      const priceA = parseInt(a.querySelector("h3").textContent.replace("Rp", "").replace(".", ""));
+      const priceB = parseInt(b.querySelector("h3").textContent.replace("Rp", "").replace(".", ""));
       return priceA - priceB;
     });
   } else if (value === "Abjad A-Z") {
