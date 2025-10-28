@@ -162,25 +162,32 @@ function updateLayout(category) {
       menuItems.innerHTML = generateCards(menuData.camilan, "camilan");
       break;
     case "sambal":
-      menuTitle.textContent = "Pilih Sambal →";
-      menuItems.className = "menu-items layout-sambal fade-in";
-      menuItems.innerHTML = generateCards(menuData.sambal, "sambal");
-      break;
-  }
-
-  setTimeout(() => {
-    document.querySelectorAll(".food-card").forEach(card => {
-      card.addEventListener("click", () => {
-        const catKey = category;
-        const name = card.querySelector("strong").textContent;
-        const item = menuData[catKey].find(i => i.name === name);
-        selectedData[catKey] = item;
-        updatePlate();
-        setTimeout(() => goToNextTab(catKey), 500);
-      });
-    });
-  }, 50);
+  menuTitle.textContent = "Pilih Sambal →";
+  menuItems.className = "menu-items layout-sambal fade-in";
+  menuItems.innerHTML = generateCards(menuData.sambal, "sambal");
+  break;
 }
+
+
+setTimeout(() => {
+  document.querySelectorAll(".food-card").forEach(card => {
+    card.addEventListener("click", () => {
+      const catKey = category;
+      const name = card.querySelector("strong").textContent;
+      const item = menuData[catKey].find(i => i.name === name);
+      selectedData[catKey] = item;
+      updatePlate();
+
+      if (catKey === "sambal") {
+        setTimeout(() => {
+          window.location.href = "checkout.html";
+        }, 2000); 
+      } else {
+        setTimeout(() => goToNextTab(catKey), 500);
+      }
+    });
+  });
+}, 50); }
 
 // === UPDATE PLATE ===
 function updatePlate() {
